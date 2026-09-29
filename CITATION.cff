@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the repository and Gilbert et al. (2015) as listed in THIRD_PARTY_NOTICES.md."
+title: "Multivariate Analysis of Blueberry Sensory Data"
+type: software
+authors:
+  - name: "kelly-wk"
+repository-code: "https://github.com/kelly-wk/blueberry-sensory-analysis"
+version: 1.0.0
+date-released: 2026-09-29
+license: MIT

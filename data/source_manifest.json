@@ -1,0 +1,17 @@
+{
+  "source": "Gilbert et al. (2015), Supporting Information S2 Table",
+  "article_doi": "10.1371/journal.pone.0138494",
+  "supplement_doi": "10.1371/journal.pone.0138494.s002",
+  "source_url": "https://journals.plos.org/plosone/article/file?type=supplementary&id=info:doi/10.1371/journal.pone.0138494.s002",
+  "source_sha256": "fade6546de831bf15c5b4ef0fa234b13d25764a599ae87a04f906bbf051acab6",
+  "source_bytes": 94712,
+  "retrieved": "2026-09-29",
+  "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+  "transformation": {
+    "sheet": "S2 Table",
+    "header_rows_skipped": 3,
+    "filters": ["Year == 2013", "non-missing gID", "complete five sensory outcomes"],
+    "selected_fields": ["sample_id", "year", "location", "harvest", "environment", "genotype", "overall_liking", "texture", "sweetness", "sourness", "flavor"],
+    "output_rows": 50
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "metadata": {
+    "analysis_date": "2026-09-29",
+    "seed": 20260929,
+    "observations": 50,
+    "environments": 9,
+    "genotypes": 6,
+    "interpretation": "exploratory, non-causal"
+  },
+  "pca": {
+    "standardized_explained_variance": {
+      "PC1": 0.56515611637,
+      "PC2": 0.32690535115,
+      "PC3": 0.077631195947,
+      "PC4": 0.021035576014,
+      "PC5": 0.0092717605242
+    },
+    "unscaled_explained_variance": {
+      "PC1": 0.46018949876,
+      "PC2": 0.45003459508,
+      "PC3": 0.063422182528,
+      "PC4": 0.020254019566,
+      "PC5": 0.0060997040658
+    },
+    "first_two_standardized_cumulative": 0.89206146752,
+    "first_two_unscaled_cumulative": 0.91022409384,
+    "scaling_subspace_angles_degrees": [11.6170083336, 13.4529443951],
+    "block_bootstrap_replicates": 1000,
+    "pc1_axis_cosine": {
+      "mean": 0.99088751564,
+      "median": 0.99678081165,
+      "q025": 0.94395106173,
+      "q975": 0.99986744015
+    },
+    "pc2_axis_cosine": {
+      "mean": 0.98730031604,
+      "median": 0.99309057894,
+      "q025": 0.94073109611,
+      "q975": 0.9993286275
+    },
+    "largest_subspace_angle_degrees": {
+      "mean": 4.8268052491,
+      "median": 4.3180989064,
+      "q025": 1.345214366,
+      "q975": 11.4346485179
+    }
+  },
+  "clustering": {
+    "gap_bootstrap_replicates": 200,
+    "gap_first_se_selected_k_standardized": 1,
+    "gap_first_se_selected_k_unscaled": 1,
+    "exploratory_forced_k_standardized": 4,
+    "exploratory_forced_k_unscaled": 3,
+    "method_ari_standardized": 0.7354974823,
+    "kmeans_scale_ari": 0.79283144039,
+    "ward_scale_ari": 0.76866527281,
+    "environment_subsample_replicates": 500,
+    "kmeans_stability": {
+      "mean": 0.92474736235,
+      "median": 0.95156274422,
+      "q025": 0.72082787618,
+      "q975": 1
+    },
+    "ward_stability": {
+      "mean": 0.85267455761,
+      "median": 0.86408121087,
+      "q025": 0.62171978873,
+      "q975": 1
+    },
+    "genotype_external_validation": {
+      "kmeans_ari": 0.068572102024,
+      "kmeans_p": 0.0042,
+      "ward_ari": 0.057174271578,
+      "ward_p": 0.0106,
+      "constrained_permutations": 4999
+    }
+  },
+  "leave_one_environment_out_genotype_validation": {
+    "accuracy": 0.46,
+    "balanced_accuracy": 0.47685185185,
+    "constrained_permutation_p": 0.001,
+    "null_mean_accuracy": 0.16848848849,
+    "null_q025": 0.06,
+    "null_q975": 0.281,
+    "permutations": 999,
+    "per_class_accuracy": {
+      "Emerald": 0.33333333333,
+      "Endura": 0.66666666667,
+      "Farthing": 0.22222222222,
+      "Meadowlark": 0.22222222222,
+      "Primadonna": 0.75,
+      "Scintilla": 0.66666666667
+    }
+  }
+}

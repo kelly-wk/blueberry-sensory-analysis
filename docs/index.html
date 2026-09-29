@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#356F9B">
+  <meta name="description" content="An open-data sensory analysis validating low-dimensional structure and cluster evidence with environment-level resampling.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="ブルーベリー官能評価の多変量解析 / Multivariate Analysis of Blueberry Sensory Data">
+  <meta property="og:description" content="An open-data sensory analysis validating low-dimensional structure and cluster evidence with environment-level resampling.">
+  <meta property="og:url" content="https://kelly-wk.github.io/blueberry-sensory-analysis/">
+  <meta property="og:image" content="https://kelly-wk.github.io/blueberry-sensory-analysis/social-preview.svg">
+  <title>ブルーベリー官能評価の多変量解析 / Multivariate Analysis of Blueberry Sensory Data</title>
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body class="tier-public_code" style="--accent:#356F9B;--accent-dark:#252A32;--accent-soft:#E5EFF6;--hero-start:#252A32">
+  <a class="skip-link" href="#content">本文へ / Skip to content</a>
+  <header class="project-hero">
+    <div class="hero-inner">
+      <div class="hero-topline">
+        <div class="eyebrow">
+          <span>統計モデリング・ベイズ推論 / Statistical Modeling &amp; Bayesian Inference</span>
+        </div>
+        <p class="tier-badge"><span lang="ja">公開コード</span><span lang="en">Public code</span></p>
+      </div>
+      <h1><span lang="ja">ブルーベリー官能評価の多変量解析</span><span lang="en">Multivariate Analysis of Blueberry Sensory Data</span></h1>
+      <div class="hero-summary">
+        <div class="copy-pair lede"><p lang="ja">公開官能評価データの低次元構造とクラスタ妥当性を、環境単位の再標本化で検証した解析。</p><p class="translation" lang="en">An open-data sensory analysis validating low-dimensional structure and cluster evidence with environment-level resampling.</p></div>
+        <div class="hero-facts">
+          <dl class="project-meta">
+            <div><dt>状態 / Status</dt><dd><span lang="ja">再現済み</span><span lang="en">Reproduced</span></dd></div>
+            <div><dt>言語 / Language</dt><dd>R</dd></div>
+          </dl>
+        </div>
+      </div>
+      <div class="method-block">
+        <p class="method-label">技術スタック / Tech Stack</p>
+        <ul class="method-list" aria-label="Methods"><li>R</li><li>PCA</li><li>Gap statistic</li><li>k-means clustering</li><li>Ward hierarchical clustering</li><li>Environment-block bootstrap</li><li>Leave-one-environment-out validation</li></ul>
+      </div>
+    </div>
+  </header>
+
+  <main id="content" class="shell">
+    <section class="evidence-figure" aria-labelledby="figure-title">
+      <div class="section-heading"><p>00</p><h2 id="figure-title">代表的な成果図 <span lang="en">Selected Result Figure</span></h2></div>
+      <figure>
+        <img src="assets/hero.png" alt="ブルーベリー官能評価の多変量解析の代表的な成果図 / Selected result figure for Multivariate Analysis of Blueberry Sensory Data">
+        <figcaption><span lang="ja">公開可能な検証結果から選んだ図です。</span> <span lang="en">Selected from the validation evidence cleared for publication.</span></figcaption>
+      </figure>
+    </section>
+    <section aria-labelledby="highlights-title">
+      <div class="section-heading"><p>01</p><h2 id="highlights-title">主なポイント <span lang="en">Highlights</span></h2></div>
+      <div class="highlight-grid"><article class="highlight">
+          <span class="highlight-number" aria-hidden="true">1</span>
+          <div class="copy-pair"><p lang="ja">CC BY 4.0の公開データ50試料・9環境を、出典とライセンスを保持して分析。</p><p class="translation" lang="en">Analyzed 50 samples across 9 environments from an open CC BY 4.0 dataset with provenance preserved.</p></div>
+        </article><article class="highlight">
+          <span class="highlight-number" aria-hidden="true">2</span>
+          <div class="copy-pair"><p lang="ja">PC1とPC2で分散の89.21%を説明し、環境ブートストラップでも低次元構造を確認。</p><p class="translation" lang="en">PC1 and PC2 explain 89.21% of variance, with low-dimensional structure checked by environment bootstrap.</p></div>
+        </article><article class="highlight">
+          <span class="highlight-number" aria-hidden="true">3</span>
+          <div class="copy-pair"><p lang="ja">gap統計量がk=1を支持したため、自然クラスタの存在を過大主張せず外部検証と分離。</p><p class="translation" lang="en">Because the gap statistic supported k=1, the analysis avoids claiming natural clusters and separates external validation.</p></div>
+        </article></div>
+    </section>
+
+    <section aria-labelledby="flow-title">
+      <div class="section-heading"><p>02</p><h2 id="flow-title">研究の流れ <span lang="en">Research Flow</span></h2></div>
+      <ol class="flow-grid"><li class="flow-card" data-step="1">
+              <h3><span lang="ja">課題</span><span lang="en">Problem</span></h3>
+              <div class="copy-pair"><p lang="ja">多属性の官能評価に安定した潜在構造や自然な群があるかを過大解釈せず調べる。</p><p class="translation" lang="en">Assess stable latent structure and natural grouping in multi-attribute sensory ratings without overinterpretation.</p></div>
+            </li><li class="flow-card" data-step="2">
+              <h3><span lang="ja">方法</span><span lang="en">Method</span></h3>
+              <div class="copy-pair"><p lang="ja">PCA、gap統計量、k-means、Ward法を用い、試験環境を分析単位として扱う。</p><p class="translation" lang="en">Use PCA, gap statistics, k-means, and Ward clustering while treating trial environment as the resampling unit.</p></div>
+            </li><li class="flow-card" data-step="3">
+              <h3><span lang="ja">検証</span><span lang="en">Validation</span></h3>
+              <div class="copy-pair"><p lang="ja">環境ブロックブートストラップとleave-one-environment-out評価で安定性と外部識別を分ける。</p><p class="translation" lang="en">Separate structural stability from external discrimination using environment-block bootstrap and leave-one-environment-out evaluation.</p></div>
+            </li><li class="flow-card" data-step="4">
+              <h3><span lang="ja">成果</span><span lang="en">Outcome</span></h3>
+              <div class="copy-pair"><p lang="ja">強い低次元構造を確認した一方、離散的な自然クラスタを支持する証拠は得られなかった。</p><p class="translation" lang="en">Found strong low-dimensional structure but no evidence supporting discrete natural clusters.</p></div>
+            </li></ol>
+    </section>
+
+    <section class="limitations" aria-labelledby="limits-title">
+      <div class="section-heading"><p>03</p><h2 id="limits-title">限界と適用範囲 <span lang="en">Limitations &amp; Scope</span></h2></div>
+      <ul><li><div class="copy-pair"><p lang="ja">試料レベルに集約された評価であり、パネリスト差や因果効果は推定できない。</p><p class="translation" lang="en">Ratings are aggregated at the sample level, so panelist heterogeneity and causal effects cannot be estimated.</p></div></li></ul>
+    </section>
+
+    <section class="publication" aria-labelledby="publication-title">
+      <div class="section-heading"><p>04</p><h2 id="publication-title">公開範囲 <span lang="en">Publication Boundary</span></h2></div>
+      <div class="publication-panel">
+        <p class="tier-badge"><span lang="ja">公開コード</span><span lang="en">Public code</span></p>
+        <div class="copy-pair"><p lang="ja">オープンライセンスのデータと完全なRワークフローを公開可能。</p><p class="translation" lang="en">The openly licensed data and complete R workflow are suitable for public release.</p></div>
+      </div>
+      <div class="cta-grid"><a class="cta" href="https://github.com/kelly-wk/blueberry-sensory-analysis"><strong lang="ja">リポジトリ</strong><span lang="en">Repository</span><span aria-hidden="true">↗</span></a><a class="cta" href="https://github.com/kelly-wk/blueberry-sensory-analysis/blob/main/REPORT.md"><strong lang="ja">レポート</strong><span lang="en">Report</span><span aria-hidden="true">↗</span></a><a class="cta" href="https://github.com/kelly-wk/blueberry-sensory-analysis#reproduce"><strong lang="ja">再現手順</strong><span lang="en">Reproduce</span><span aria-hidden="true">↗</span></a></div>
+    </section>
+  </main>
+
+  <footer>
+    <p><span lang="ja">公開レベルはページ上で常に明示されます。</span> <span lang="en">Publication tier is always shown explicitly.</span></p>
+    <p>kelly-wk · blueberry-sensory-analysis</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,160 @@
+{
+  "R": {
+    "Version": "4.2.0",
+    "Repositories": [
+      {
+        "Name": "CRAN",
+        "URL": "https://cloud.r-project.org"
+      }
+    ]
+  },
+  "Packages": {
+    "cellranger": {
+      "Package": "cellranger",
+      "Version": "1.1.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["R", "rematch", "tibble"]
+    },
+    "cli": {
+      "Package": "cli",
+      "Version": "3.6.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["R", "utils"]
+    },
+    "cluster": {
+      "Package": "cluster",
+      "Version": "2.1.8.2",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["graphics", "grDevices", "R", "stats", "utils"]
+    },
+    "cpp11": {
+      "Package": "cpp11",
+      "Version": "0.5.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["R"]
+    },
+    "crayon": {
+      "Package": "crayon",
+      "Version": "1.5.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["grDevices", "methods", "utils"]
+    },
+    "glue": {
+      "Package": "glue",
+      "Version": "1.8.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["methods", "R"]
+    },
+    "hms": {
+      "Package": "hms",
+      "Version": "1.1.4",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["cli", "lifecycle", "methods", "pkgconfig", "rlang", "vctrs"]
+    },
+    "jsonlite": {
+      "Package": "jsonlite",
+      "Version": "2.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["methods"]
+    },
+    "lifecycle": {
+      "Package": "lifecycle",
+      "Version": "1.0.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["cli", "R", "rlang"]
+    },
+    "magrittr": {
+      "Package": "magrittr",
+      "Version": "2.0.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["R"]
+    },
+    "pillar": {
+      "Package": "pillar",
+      "Version": "1.11.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["cli", "glue", "lifecycle", "rlang", "utf8", "utils", "vctrs"]
+    },
+    "pkgconfig": {
+      "Package": "pkgconfig",
+      "Version": "2.0.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["utils"]
+    },
+    "prettyunits": {
+      "Package": "prettyunits",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["R"]
+    },
+    "progress": {
+      "Package": "progress",
+      "Version": "1.2.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["crayon", "hms", "prettyunits", "R", "R6"]
+    },
+    "R6": {
+      "Package": "R6",
+      "Version": "2.6.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["R"]
+    },
+    "readxl": {
+      "Package": "readxl",
+      "Version": "1.4.5",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["cellranger", "cpp11", "progress", "R", "tibble", "utils"]
+    },
+    "rematch": {
+      "Package": "rematch",
+      "Version": "2.0.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": []
+    },
+    "rlang": {
+      "Package": "rlang",
+      "Version": "1.2.0",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["R", "utils"]
+    },
+    "tibble": {
+      "Package": "tibble",
+      "Version": "3.3.1",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["cli", "lifecycle", "magrittr", "methods", "pillar", "pkgconfig", "R", "rlang", "utils", "vctrs"]
+    },
+    "utf8": {
+      "Package": "utf8",
+      "Version": "1.2.6",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["R"]
+    },
+    "vctrs": {
+      "Package": "vctrs",
+      "Version": "0.7.3",
+      "Source": "Repository",
+      "Repository": "CRAN",
+      "Requirements": ["cli", "glue", "lifecycle", "R", "rlang"]
+    }
+  }
+} 
